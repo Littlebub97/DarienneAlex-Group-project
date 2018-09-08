@@ -1,12 +1,12 @@
 ﻿using System;
 
-namespace TimeSheet2
+namespace TimeSheet.Tests
 {
     class Program
     {
         static void Main(string[] args)
         {
-            
+            Console.WriteLine("Hello World!");
         }
     }
 }
