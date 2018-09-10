@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace TimeSheet.Models.Entites.Base
+namespace TimeSheet.Models.Enitites.Base
 {
   public abstract class EntityBase
     {

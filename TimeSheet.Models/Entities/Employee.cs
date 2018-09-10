@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using TimeSheet.Models.Entites.Base;
+using TimeSheet.Models.Enitites.Base;
 
 namespace TimeSheet.Models.Entites
 {   
