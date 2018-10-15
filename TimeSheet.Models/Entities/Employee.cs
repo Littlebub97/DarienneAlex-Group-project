@@ -8,6 +8,9 @@ namespace TimeSheet.Models.Entites
     public class Employee : EntityBase
     {
 
+        [DataType(DataType.Text), MaxLength(50)]
+        public string EmployeeName { get; set; }
+
         [Required]
         [DataType(DataType.Text), MaxLength(50)]
         public string firstName {get; set; }

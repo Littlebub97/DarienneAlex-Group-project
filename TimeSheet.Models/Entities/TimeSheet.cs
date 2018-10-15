@@ -8,9 +8,17 @@ using TimeSheet.Models.Enitites.Base;
 namespace TimeSheet.Models.Entities
 {
     [Table("TimeSheet", Schema = "TimeSheet")]
-   public class TimeSheet : EntityBase
-    {   
-  
+   public class timeSheet : EntityBase
+    {
+        [DataType(DataType.Text), MaxLength(50)]
+        public string employeeName { get; set; }
+
+        [DataType(DataType.Date)]
+        public DateTime date { get; set; }
+
+        [DataType(DataType.Time)]
+        public decimal hours { get; set; }
+
         [DataType(DataType.Currency)]
         public decimal payRate;
 

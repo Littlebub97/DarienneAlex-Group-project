@@ -17,9 +17,9 @@ namespace TimeSheet.DAL.Repos
         {
         }
         public override IEnumerable<Employee> GetAll()
-            => Table.OrderBy(x => x.EmployeeName);
+            => Table.OrderBy(x => x.firstName);
 
         public override IEnumerable<Employee> GetRange(int skip, int take)
-            => GetRange(Table.OrderBy(x => x.EmployeeName), skip, take);
+            => GetRange(Table.OrderBy(x => x.lastName), skip, take);
     }
 }

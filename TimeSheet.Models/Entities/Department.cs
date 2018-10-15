@@ -8,7 +8,12 @@ namespace TimeSheet.Models.Entities
 {
     [Table("Department", Schema = "Employee")]
     public class Department : EntityBase
-    {
+    {       
+
+            [Required]
+            [DataType(DataType.Text), MaxLength(50)]
+            public string DepartmentName { get; set; }
+
             [Required]
             [DataType(DataType.Text), MaxLength(50), Display(Name = "Full Name")]
             public string FullName { get; set; }
