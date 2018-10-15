@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2016
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimeSheet.DAL", "TimeSheet.DAL\TimeSheet.DAL.csproj", "{B9BEC00D-3EF9-4D55-9A8F-A307C33235A7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TimeSheet.DAL", "TimeSheet.DAL\TimeSheet.DAL.csproj", "{B9BEC00D-3EF9-4D55-9A8F-A307C33235A7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimeSheet.Models", "TimeSheet.Models\TimeSheet.Models.csproj", "{B8B4BBB5-6E45-4430-8993-E8987DAF255C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TimeSheet.Models", "TimeSheet.Models\TimeSheet.Models.csproj", "{B8B4BBB5-6E45-4430-8993-E8987DAF255C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimeSheet.Tests", "TimeSheet.Tests\TimeSheet.Tests.csproj", "{1105F6E0-8C8C-4D6E-B508-0313ABB7D89E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TimeSheet.Tests", "TimeSheet.Tests\TimeSheet.Tests.csproj", "{1105F6E0-8C8C-4D6E-B508-0313ABB7D89E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
