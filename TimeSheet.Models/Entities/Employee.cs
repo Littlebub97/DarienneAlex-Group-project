@@ -9,5 +9,12 @@ namespace TimeSheet.Models.Entites
     {
       [DataType(DataType.Text), MaxLength(50)]
         public string EmployeeName {get; set; }
+
+        [DataType(DataType.Text), MaxLength(50)]
+        public string EmailAddress{ get; set; }
+
+        [DataType(DataType.Text), MaxLength(50)]
+        public string PhoneNumber { get; set; }
+
     }
 }
