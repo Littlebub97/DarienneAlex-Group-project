@@ -10,9 +10,6 @@ namespace TimeSheet.Models.Entities
     [Table("TimeSheet", Schema = "TimeSheet")]
    public class timeSheet : EntityBase
     {
-        [DataType(DataType.Text), MaxLength(50)]
-        public string employeeName { get; set; }
-
         [DataType(DataType.Date)]
         public DateTime date { get; set; }
 
@@ -21,6 +18,10 @@ namespace TimeSheet.Models.Entities
 
         [DataType(DataType.Currency)]
         public decimal payRate;
+
+        [DataType(DataType.Currency)]
+        public decimal salesCommision;
+        
 
        
 

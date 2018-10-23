@@ -2,12 +2,12 @@
 using System.ComponentModel.DataAnnotations.Schema;
 using TimeSheet.Models.Enitites.Base;
 
-namespace TimeSheet.Models.Entites
+namespace TimeSheet.Models.Entities
 {   
     [Table("Employee", Schema = "Employee")]
     public class Employee : EntityBase
     {
-
+        [Required]
         [DataType(DataType.Text), MaxLength(50)]
         public string EmployeeName { get; set; }
 
@@ -35,6 +35,9 @@ namespace TimeSheet.Models.Entites
         [Required]
         [DataType(DataType.Text), MaxLength(100)]
         public string address { get; set; }
+
+        [DataType(DataType.Currency)]
+        public decimal pay { get; set; }
 
 
     }

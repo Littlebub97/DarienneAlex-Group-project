@@ -15,12 +15,8 @@ namespace TimeSheet.Models.Entities
             public string DepartmentName { get; set; }
 
             [Required]
-            [DataType(DataType.Text), MaxLength(50), Display(Name = "Full Name")]
-            public string FullName { get; set; }
-
-            [Required]
-            [DataType(DataType.Text), MaxLength(50), Display(Name = "Position")]
-            public string Position { get; set; }
+            [DataType(DataType.Text), MaxLength(50), Display(Name = "Roles")]
+            public string Role { get; set; }
 
 
     }

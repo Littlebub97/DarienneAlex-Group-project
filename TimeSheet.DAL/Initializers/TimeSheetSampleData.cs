@@ -3,9 +3,8 @@ using System.Collections.Generic;
 using System.Text;
 using System.Linq;
 using Microsoft.EntityFrameworkCore;
-using TimeSheet.Models.Enitites;
+using TimeSheet.Models.Entities;
 using TimeSheet.DAL.EF;
-using TimeSheet.Models.Entites;
 
 namespace TimeSheet.DAL.Initializers
 {
