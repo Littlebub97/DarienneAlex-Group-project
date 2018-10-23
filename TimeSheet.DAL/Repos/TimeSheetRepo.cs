@@ -7,7 +7,7 @@ using TimeSheet.Models.Entities;
 
 namespace TimeSheet.DAL.Repos
 {
-   public class TimeSheetRepo : RepoBase<timeSheet>
+   public class TimeSheetRepo : RepoBase<Timesheet>
     {
         public TimeSheetRepo(DbContextOptions<TimeSheetContext> options) : base(options)
         { 
@@ -16,7 +16,11 @@ namespace TimeSheet.DAL.Repos
         public TimeSheetRepo() : base()
         {
         }
+        public override IEnumerable<Timesheet> GetAll()
+       => Table.OrderBy(x => x.EmployeeId);                     //CHANGE LATER
 
+        public override IEnumerable<Timesheet> GetRange(int skip, int take)
+            => GetRange(Table.OrderBy(x => x.EmployeeId), skip, take);      //CHANGE LATER
 
     }
 }

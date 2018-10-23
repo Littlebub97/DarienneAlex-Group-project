@@ -3,7 +3,7 @@ using System.Linq;
 using Microsoft.EntityFrameworkCore;
 using TimeSheet.DAL.EF;
 using TimeSheet.DAL.Repos.Base;
-using TimeSheet.Models.Entites;
+using TimeSheet.Models.Entities;
 
 namespace TimeSheet.DAL.Repos
 {
@@ -17,9 +17,9 @@ namespace TimeSheet.DAL.Repos
         {
         }
         public override IEnumerable<Employee> GetAll()
-            => Table.OrderBy(x => x.firstName);
+            => Table.OrderBy(x => x.Id);
 
         public override IEnumerable<Employee> GetRange(int skip, int take)
-            => GetRange(Table.OrderBy(x => x.lastName), skip, take);
+            => GetRange(Table.OrderBy(x => x.Id), skip, take);
     }
 }

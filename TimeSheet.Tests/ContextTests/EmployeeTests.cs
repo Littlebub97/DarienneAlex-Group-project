@@ -1,10 +1,9 @@
 ﻿using System;
 using TimeSheet.DAL.EF;
-using TimeSheet.Models.Enitites;
 using Xunit;
 using Microsoft.EntityFrameworkCore;
 using System.Linq;
-using TimeSheet.Models.Entites;
+using TimeSheet.Models.Entities;
 
 namespace TimeSheet.Test.ContextTests
 {

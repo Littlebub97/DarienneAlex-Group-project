@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore;
-using TimeSheet.Models.Enitites;
+using TimeSheet.Models.Entities;
 
 namespace TimeSheet.DAL.EF
 {
@@ -24,6 +24,8 @@ namespace TimeSheet.DAL.EF
                      @"Server=(localdb)\mssqllocaldb;Database=TimeSheet;Trusted_Connection=True;MultipleActiveResultSets=true;",
                     options => options.EnableRetryOnFailure());
             }
+
         }
+        public DbSet<Employee> Employees { get; set; }
     }
 }

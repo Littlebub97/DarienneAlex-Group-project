@@ -1,15 +1,16 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using TimeSheet.Models.Enitites.Base;
 
 namespace TimeSheet.Models.Entities
 {
-    [Table("TimeSheet", Schema = "TimeSheet")]
-   public class timeSheet : EntityBase
+   [Table("TimeSheet", Schema = "TimeSheet")]
+   public class Timesheet : EntityBase
     {
+        [InverseProperty("EmployeeId")]
+        public ForeignKeyAttribute EmployeeId { get; set; } //IMPORTANT CHANGE LATER
+
         [DataType(DataType.Date)]
         public DateTime date { get; set; }
 
@@ -17,10 +18,10 @@ namespace TimeSheet.Models.Entities
         public decimal hours { get; set; }
 
         [DataType(DataType.Currency)]
-        public decimal payRate;
+        public decimal payRate { get; set; }        //Possibly change
 
         [DataType(DataType.Currency)]
-        public decimal salesCommision;
+        public decimal salesCommision { get; set; }     //Possibly change
         
 
        

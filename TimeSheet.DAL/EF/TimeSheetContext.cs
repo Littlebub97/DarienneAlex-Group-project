@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
-using TimeSheet.Models.Entites;
+using TimeSheet.Models.Entities;
 
 
 namespace TimeSheet.DAL.EF
@@ -27,6 +27,6 @@ namespace TimeSheet.DAL.EF
             }
         }
         public DbSet<Employee> Employees { get; set; }
-        public DbSet<TimeSheet> TimeSheets { get; set; }
+        public DbSet<Timesheet> TimeSheet { get; set; }
     }
 }

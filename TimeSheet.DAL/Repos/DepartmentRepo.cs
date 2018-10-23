@@ -18,8 +18,6 @@ namespace TimeSheet.DAL.Repos
         }
 
         public override IEnumerable<Department> GetAll()
-            => Table.OrderBy(x => x.DepartmentName);
-
-        
+            => Table.OrderBy(x => x.DepartmentName);        
     }
 }
