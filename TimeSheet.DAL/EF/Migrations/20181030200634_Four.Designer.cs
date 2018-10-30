@@ -8,9 +8,10 @@ using TimeSheet.DAL.EF;
 namespace TimeSheet.DAL.EF.Migrations
 {
     [DbContext(typeof(TimeSheetContext))]
-    partial class TimeSheetContextModelSnapshot : ModelSnapshot
+    [Migration("20181030200634_Four")]
+    partial class Four
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
             modelBuilder
                 .HasAnnotation("ProductVersion", "1.1.0-rtm-22752")
@@ -82,29 +83,6 @@ namespace TimeSheet.DAL.EF.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Employee","TimeSheet");
-                });
-
-            modelBuilder.Entity("TimeSheet.Models.Entities.Timesheet", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<byte[]>("TimeStamp")
-                        .IsConcurrencyToken()
-                        .ValueGeneratedOnAddOrUpdate();
-
-                    b.Property<DateTime>("date");
-
-                    b.Property<decimal>("hours");
-
-                    b.Property<decimal>("payRate");
-
-                    b.Property<decimal>("salesCommision");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("TimeSheet","TimeSheet");
                 });
         }
     }

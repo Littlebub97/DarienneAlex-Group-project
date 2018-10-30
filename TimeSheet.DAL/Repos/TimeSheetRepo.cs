@@ -17,10 +17,10 @@ namespace TimeSheet.DAL.Repos
         {
         }
         public override IEnumerable<Timesheet> GetAll()
-       => Table.OrderBy(x => x.EmployeeId);                     //CHANGE LATER
+       => Table.OrderBy(x => x.Id);                     //CHANGE LATER
 
         public override IEnumerable<Timesheet> GetRange(int skip, int take)
-            => GetRange(Table.OrderBy(x => x.EmployeeId), skip, take);      //CHANGE LATER
+            => GetRange(Table.OrderBy(x => x.Id), skip, take);      //CHANGE LATER
 
     }
 }

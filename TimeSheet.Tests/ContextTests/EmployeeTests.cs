@@ -14,25 +14,25 @@ namespace TimeSheet.Test.ContextTests
         public EmployeeTests()
         {
             _db = new TimeSheetContext();
-        //    CleanDatabase();
+            //    CleanDatabase();
         }
         public void Dispose()
         {
-          //  CleanDatabase();   
+            //  CleanDatabase();   
             _db.Dispose();
         }
 
-       // private void CleanDatabase()
-       // {
-          //  _db.Database.ExecuteSqlCommand("Delete from TimeSheet.Employees");
+        // private void CleanDatabase()
+        // {
+        //  _db.Database.ExecuteSqlCommand("Delete from TimeSheet.Employees");
         //    _db.Database.ExecuteSqlCommand($"DBCC CHECKIDENT (\"TimeSheet.Employees\", RESEED, -1);");
-      //  }
+        //  }
 
         [Fact]
         public void FirstTest()
         {
             Assert.True(true);
         }
-
+    }
    
 }

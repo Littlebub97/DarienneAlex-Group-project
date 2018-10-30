@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using TimeSheet.Models.Enitites.Base;
 
 namespace TimeSheet.Models.Entities
 {
-    [Table("Department", Schema = "Employee")]
+    [Table("Department", Schema = "TimeSheet")]
     public class Department : EntityBase
     {       
 

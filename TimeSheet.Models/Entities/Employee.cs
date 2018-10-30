@@ -4,7 +4,7 @@ using TimeSheet.Models.Enitites.Base;
 
 namespace TimeSheet.Models.Entities
 {   
-    [Table("Employee", Schema = "Employee")]
+    [Table("Employee", Schema = "TimeSheet")]
     public class Employee : EntityBase
     {
         [Required]

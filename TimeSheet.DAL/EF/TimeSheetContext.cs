@@ -27,6 +27,7 @@ namespace TimeSheet.DAL.EF
             }
         }
         public DbSet<Employee> Employees { get; set; }
-        public DbSet<Timesheet> TimeSheet { get; set; }
+        public DbSet<Department> Departments { get; set; }
+        public DbSet<Timesheet> TimeSheets { get; set; }
     }
 }

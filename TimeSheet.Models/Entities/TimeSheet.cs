@@ -8,8 +8,9 @@ namespace TimeSheet.Models.Entities
    [Table("TimeSheet", Schema = "TimeSheet")]
    public class Timesheet : EntityBase
     {
-        [InverseProperty("EmployeeId")]
-        public ForeignKeyAttribute EmployeeId { get; set; } //IMPORTANT CHANGE LATER
+  
+        
+        
 
         [DataType(DataType.Date)]
         public DateTime date { get; set; }
