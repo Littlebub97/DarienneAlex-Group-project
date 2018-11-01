@@ -16,13 +16,17 @@ namespace TimeSheet.Models.Entities
         public DateTime date { get; set; }
 
         [DataType(DataType.Time)]
-        public decimal hours { get; set; }
+        public decimal dailyHours { get; set; } //Possibly change later
+
+        [DataType(DataType.Time)]
+        public decimal weeklyHours { get; set; }
 
         [DataType(DataType.Currency)]
         public decimal payRate { get; set; }        //Possibly change
 
         [DataType(DataType.Currency)]
         public decimal salesCommision { get; set; }     //Possibly change
+
         
 
        

@@ -12,7 +12,7 @@ namespace TimeSheet.DAL.Initializers
     {
         public static IEnumerable<Employee> GetEmployees() => new List<Employee>
         {
-            new Employee { firstName = "Alex", lastName = "Sidwell", EmailAddress = "asidwell@wvup.edu" }
+            new Employee { firstName = "Alex", lastName = "Sidwell", EmailAddress = "asidwell@wvup.edu", address = "123 lane" }
         };
     }
 }

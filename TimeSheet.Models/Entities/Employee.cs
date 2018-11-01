@@ -37,7 +37,7 @@ namespace TimeSheet.Models.Entities
         public string address { get; set; }
 
         [DataType(DataType.Currency)]
-        public decimal pay { get; set; }
+        public decimal pay { get; set; }//wage by hour
 
 
     }
