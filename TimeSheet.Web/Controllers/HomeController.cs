@@ -13,9 +13,15 @@ namespace TimeSheet.Web.Controllers
             return View();
         }
 
+        public IActionResult ClockIn()
+        {
+            ViewData["Message"] = "ClockIn";
+            return View();
+        }
+
         public IActionResult About()
         {
-            ViewData["Message"] = "Your application description page.";
+            ViewData["Message"] = "TimeSheet";
 
             return View();
         }

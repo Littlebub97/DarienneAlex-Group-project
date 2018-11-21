@@ -1,6 +1,6 @@
 ﻿body {
     padding-top: 50px;
-    padding-bottom: 20px;
+    padding-bottom: 20px; 
 }
 
 /* Wrapping element */
@@ -29,6 +29,7 @@ textarea {
     content: "[";
     padding-right: 0.5em;
 }
+
 
 .btn-bracketed::after {
     display: inline-block;
