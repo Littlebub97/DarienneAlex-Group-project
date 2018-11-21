@@ -9,11 +9,16 @@
 <h3>@ViewData["Message"]</h3>
 <img src="~/images/doge.jpg" />
 <form>
-    <h4>Clock</h4><button type="button">Clock In!</button><br /> <h4>Clock</h4><button type="button">Clock Out!</button><br />
+    <h4>Clock</h4><button type="button">Clock In!</button> <h4>Clock</h4><button type="button">Clock Out!</button><br />
     Time: <input type="datetime" name="Time" /><br />
     <p id="demo"></p>
     <script>
         var d = new Date();
         document.getElementById("demo").innerHTML = d;
     </script>
+    <style>
+        body{
+            background-image: url(/images/banner2.svg);
+        }
+    </style>
 </form>

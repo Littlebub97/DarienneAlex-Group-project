@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TimeSheet.Models", "TimeShe
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TimeSheet.Tests", "TimeSheet.Tests\TimeSheet.Tests.csproj", "{1105F6E0-8C8C-4D6E-B508-0313ABB7D89E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimeSheet.Web", "TimeSheet.Web\TimeSheet.Web.csproj", "{A3825619-8123-4E3E-A42B-C66C83AA0C74}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TimeSheet.Web", "TimeSheet.Web\TimeSheet.Web.csproj", "{A3825619-8123-4E3E-A42B-C66C83AA0C74}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
