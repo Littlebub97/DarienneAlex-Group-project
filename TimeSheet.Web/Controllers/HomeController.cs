@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using TimeSheet.Models.Entities;
 
 namespace TimeSheet.Web.Controllers
 {
@@ -13,6 +14,11 @@ namespace TimeSheet.Web.Controllers
             return View();
         }
 
+        public IActionResult Manager()
+        {
+            ViewData["Message"] = "Manager";
+                return View();
+        }
         public IActionResult ClockIn()
         {
             ViewData["Message"] = "ClockIn";
