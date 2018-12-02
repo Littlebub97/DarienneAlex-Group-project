@@ -8,9 +8,10 @@ namespace TimeSheet.Models.Entities
    [Table("TimeSheet", Schema = "TimeSheet")]
    public class Timesheet : EntityBase
     {
-  
-        
-        
+        public int EmployeeId { get; set; }
+
+        [ForeignKey(nameof(EmployeeId))]
+        public Employee Employee { get; set; }
 
         [DataType(DataType.Date)]
         public DateTime date { get; set; }
@@ -27,7 +28,10 @@ namespace TimeSheet.Models.Entities
         [DataType(DataType.Currency)]
         public decimal salesCommision { get; set; }     //Possibly change
 
-        
+        public bool approved { get; set; }
+
+        [DataType(DataType.Text), MaxLength(200)]
+        public string Reason { get; set; }
 
        
 
